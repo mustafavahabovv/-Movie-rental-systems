@@ -1,0 +1,537 @@
+.detail-image{
+  width: 190px;
+  
+  img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.detail-content{
+  span{
+    font-size: 12px;
+    color: #121212A3;
+  }
+  .detail-title{
+    font-size: 32px;
+    color: #121212;
+    font-weight: 700;
+  }
+
+}
+.detailShadow {
+  padding: 35px 0px;
+  align-self: start;
+  margin-top: 90px;
+}
+.tabs {
+  display: flex;
+  gap: 15px;
+  width: 95%;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: #DF4244;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+}
+
+.tab-button:not(.active) {
+  color: #888; 
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.tab-button:hover {
+  color: #DF4244; 
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); 
+}
+.review{
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #21212147;
+  padding: 30px;
+  max-width: 900px;
+}
+.reviewContentText{
+  font-size: 16px;
+  color: #121212;
+  max-width: 800px;
+  word-wrap: break-word; /* Sözləri düzgün şəkildə bölmək */
+  overflow-wrap: break-word; 
+}
+.review-actions{
+  font-size: 14px;
+    color: #777;
+    font-style: italic;
+   
+}
+.userRew{
+  display: flex;
+  width: 70px;
+  height: 70px;
+  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+  }
+  
+  
+}
+.rewContent{
+  max-width: 800px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+.detail-description{
+  background-color: #fff;
+  border:  1px solid #21212147;
+  padding: 30px;
+  border-radius: 10px;
+  .user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    
+  }
+  h4{
+    font-size: 24px;
+    color: #121212;
+    margin-bottom: 10px;
+
+  }
+  p{
+    font-size: 16px;
+    color: #121212A3;
+  }
+}
+
+.ratArea{
+  border-left: 1px solid #21212147;
+  border-right: 1px solid #21212147;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 40px;
+  margin-top: 40px;
+  min-width: 98px;
+}
+
+.customGreenBtn{
+  border-radius: 30px !important;
+  margin-top: 40px;
+  width: 250px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.similarImage{
+  width: 90px;
+  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
+.similarDescription{
+  font-size: 12px;
+  color: #6f6f6f;
+  max-width: 188px;
+}
+.comments {
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid #21212147;
+}
+.comment{
+  padding: 20px;  
+  border-top: 1px solid #21212147;
+  .commentImg{
+    width: 50px;
+    height: 50px;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  .commentContent{
+    margin-top: 20px;
+    max-width: 800px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+.deleteComment{
+  color: #DF4244;
+  cursor: pointer;
+  display: flex;
+  margin-top: 10px;
+  :hover{
+    text-decoration: underline;
+  }
+}
+.add-comment{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  input{
+    width: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #21212147;
+  }
+  button{
+    width: 20%;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+}
+.reviews-section{
+  .load-more-reviews{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+      text-decoration: underline;
+      color: #000 !important;
+    }
+  }
+}
+
+.detail-image {
+  width: 190px;
+
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.detail-content {
+  span {
+    font-size: 12px;
+    color: #121212A3;
+  }
+  .detail-title {
+    font-size: 32px;
+    color: #121212;
+    font-weight: 700;
+  }
+}
+.detailShadow {
+  padding: 35px 0px;
+  align-self: start;
+  margin-top: 90px;
+}
+.tabs {
+  display: flex;
+  gap: 15px;
+  width: 95%;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: #DF4244;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+}
+
+.tab-button:not(.active) {
+  color: #888;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button:hover {
+  color: #DF4244;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.review {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #21212147;
+  padding: 30px;
+  max-width: 900px;
+}
+.reviewContentText {
+  font-size: 16px;
+  color: #121212;
+  max-width: 800px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.review-actions {
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+}
+.userRew {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+.rewContent {
+  max-width: 800px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.detail-description {
+  background-color: #fff;
+  border: 1px solid #21212147;
+  padding: 30px;
+  border-radius: 10px;
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: 24px;
+    color: #121212;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    color: #121212A3;
+  }
+}
+.ratArea {
+  border-left: 1px solid #21212147;
+  border-right: 1px solid #21212147;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 40px;
+  margin-top: 40px;
+  min-width: 98px;
+}
+.customGreenBtn {
+  border-radius: 30px !important;
+  margin-top: 40px;
+  width: 250px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.similarImage {
+  width: 90px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
+.similarDescription {
+  font-size: 12px;
+  color: #6f6f6f;
+  max-width: 188px;
+}
+.comments {
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid #21212147;
+}
+.comment {
+  padding: 20px;
+  border-top: 1px solid #21212147;
+  .commentImg {
+    width: 50px;
+    height: 50px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  .commentContent {
+    margin-top: 20px;
+    max-width: 800px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+.deleteComment {
+  color: #DF4244;
+  cursor: pointer;
+  display: flex;
+  margin-top: 10px;
+  :hover {
+    text-decoration: underline;
+  }
+}
+.add-comment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  input {
+    width: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #21212147;
+  }
+  button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+}
+.reviews-section {
+  .load-more-reviews {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      text-decoration: underline;
+      color: #000 !important;
+    }
+  }
+}
+
+/* 🔥 Əlavə olunan Dark Mode hissəsi */
+.dark-mode {
+  .detailShadow,
+  .detail-description,
+  .review,
+  .comment,
+  .ratArea,
+  .add-comment input,
+  .add-comment button,
+  .customGreenBtn,
+  .tab-button {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0 !important;
+    border-color: #444 !important;
+  }
+
+  .detail-content span,
+  .detail-content h2,
+  .detail-title,
+  .detail-description h4,
+  .detail-description p,
+  .reviewContentText,
+  .review-actions,
+  .similarDescription {
+    color: #ccc !important;
+  }
+
+  .tab-button.active {
+    color: #ff4c4c !important;
+    text-decoration-color: #ff4c4c;
+  }
+
+  .tab-button:not(.active):hover {
+    color: #ff4c4c !important;
+  }
+
+  .commentImg img,
+  .userRew img,
+  .detail-image img,
+  .similarImage img {
+    border: 1px solid #555;
+  }
+
+  .add-comment input {
+    background-color: #2c2c2c !important;
+    color: #fff !important;
+  }
+
+  .add-comment button {
+    background-color: #28a745 !important;
+    color: #fff !important;
+  }
+
+  .deleteComment {
+    color: #ff4c4c !important;
+  }
+
+  .load-more-reviews {
+    color: #aaa !important;
+  }
+}
+
+.dark-mode {
+  .add-review textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5); // yarı şəffaf açıq boz-ağ rəng
+  }
+}
+
+.dark-mode {
+  select,
+  select option,
+  .form-select,
+  .form-select option {
+    background-color: #2c2c2c; // tünd fon
+    color: #ffffffcc; // açıq-ağ, şəffaflıqla
+    border: 1px solid #444;
+  }
+
+  .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #df4244; // diqqət çəksin deyə qırmızı vurğu
+  }
+}
+

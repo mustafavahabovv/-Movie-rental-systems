@@ -1,0 +1,47 @@
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important; 
+}
+.btn-success{
+  background-color: #198754 !important;
+}
+
+/* Dark Mode Üçün */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .card,
+body.dark-mode .form-control,
+body.dark-mode .btn {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+/* Light Mode */
+.book-status.wantToRead {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.book-status.alreadyRead {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Dark Mode */
+.dark-mode .book-status.wantToRead {
+  background-color: #8a6d3b;
+  color: #fff;
+}
+
+.dark-mode .book-status.alreadyRead {
+  background-color: #1e7e34;
+  color: #fff;
+}

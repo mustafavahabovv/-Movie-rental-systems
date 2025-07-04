@@ -1,0 +1,15 @@
+.rating-stars .star {
+    font-size: 24px;
+    color: gold;
+  }
+  
+  .rating-stars .empty {
+    color: gray;
+  }
+  
+  .rating-stars .half {
+    color: gold;
+    background: linear-gradient(to right, gold 50%, gray 50%);
+    -webkit-background-clip: text;
+  }
+  

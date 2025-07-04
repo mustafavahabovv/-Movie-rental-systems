@@ -1,0 +1,82 @@
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  background: #f0f0f0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.pagination a:hover {
+  background: #d9534f;
+  color: white !important;
+}
+
+.pagination .active a {
+  background: #d9534f;
+  color: white;
+}
+
+/* DARK MODE STYLES */
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .pagination a {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .pagination a:hover,  
+body.dark .pagination .active a {
+  background-color: #d9534f;
+  color: white !important;
+}
+
+body.dark .filterArea {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.dark .form-check-label {
+  color: #ccc;
+}
+
+body.dark .form-control {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.dark .card .card-title,
+body.dark .card .card-text {
+  color: #f0f0f0;
+}
+
+body.dark .backHover {
+  color: #f0f0f0;
+}
+
+body.dark .btn-danger {
+  background-color: #b52b3a;
+}

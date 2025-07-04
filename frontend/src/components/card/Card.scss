@@ -1,0 +1,32 @@
+.cards {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  text-align: left !important;
+
+  .image {
+    width: 95%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      min-height: 386px;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: transform 0.5s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      
+      }
+    }
+  }
+  .content {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+  }
+}
+

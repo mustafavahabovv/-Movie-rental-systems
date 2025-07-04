@@ -1,0 +1,278 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 90px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+/* ---- LIGHT MODE (default görünüş) ---- */
+.carousel-caption {
+  position: absolute;
+  bottom: 10%;
+  left: 6.4%;
+  max-width: 45%;
+  text-align: left;
+  padding: 0;
+  background: none;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #ccc;
+  }
+}
+
+/* ---- DARK MODE üçün neon effekt ---- */
+.dark-mode {
+  .carousel-caption {
+    padding: 16px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+
+    h3 {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 799;
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #e0f7fa;
+      text-shadow: 0 0 5px #00f0ff;
+    }
+  }
+}
+
+/* ---- Genre Badge (hər iki rejimdə işləyəcək) ---- */
+.genre-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 90px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+/* ---- LIGHT MODE (default görünüş) ---- */
+.carousel-caption {
+  position: absolute;
+  bottom: 10%;
+  left: 6.4%;
+  max-width: 45%;
+  text-align: left;
+  padding: 0;
+  background: none;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #ccc;
+  }
+}
+
+/* ---- DARK MODE üçün neon effekt ---- */
+.dark-mode {
+  .carousel-caption {
+    padding: 16px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+
+    h3 {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 799;
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #e0f7fa;
+      text-shadow: 0 0 5px #00f0ff;
+    }
+  }
+}
+
+/* ---- Genre Badge (hər iki rejimdə işləyəcək) ---- */
+.genre-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+/* ---- Responsive dizayn ---- */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 400px;
+  }
+
+  .carousel-caption {
+    bottom: 15%;
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.carousel-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.media-wrapper:hover .carousel-video {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.media-wrapper:hover .carousel-image {
+  opacity: 0;
+}
+
+.media-wrapper {
+  position: relative;
+  .carousel-video {
+    opacity: 0;
+  }
+
+  &:hover {
+    .carousel-video {
+      opacity: 1;
+    }
+
+    .carousel-image {
+      opacity: 1;
+     
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 250px;
+    object-fit: contain;
+  }
+
+  .carousel-caption {
+    display: none;
+  }
+}
+
+
+/* ---- Responsive dizayn ---- */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 400px;
+  }
+
+  .carousel-caption {
+    bottom: 15%;
+    width: 90%;
+    font-size: 16px;
+    padding: 10px;
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 250px;
+    object-fit: contain;
+  }
+
+  .carousel-caption {
+    display: none;
+  }
+}

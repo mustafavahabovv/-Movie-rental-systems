@@ -1,0 +1,140 @@
+.releases-section {
+  padding: 30px 0px;
+  background-color: #f7f5e1;
+  color: white;
+  min-height: 430px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .releases-section {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Aradakı sanki "xətt" kimi görünən effekti aradan qaldırmaq üçün */
+.releases-section .slick-slide>div {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.releaseStart {
+  background-color: #444;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .releaseStart {
+  background-color: #2c2c2c;
+  /* Daha yumşaq tünd fon */
+  border: 1px solid #444;
+  /* Az daha açıq çərçivə */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.04);
+  /* Yüngül effekt */
+}
+
+.releaseDetail {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  width: 75%;
+  background: transparent;
+}
+
+.dark-mode .releaseDetail {
+  background: transparent;
+}
+
+.releaseImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+
+.dark-mode .releaseImage {
+  background: none;
+}
+
+.releaseImg {
+  width: 250px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.releaseImg:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.dark-mode .releaseImg {
+  border: 2px solid #444;
+}
+
+.releaseHead {
+  font-weight: 550;
+  color: #f0f0f0;
+}
+
+.dark-mode .releaseHead {
+  color: #f0f0f0;
+}
+
+.releasDes {
+  max-width: 98%;
+  color: #f0f0f0;
+}
+
+.dark-mode .releasDes {
+  color: #cccccc;
+}
+
+.dark-mode .mediaCateDate {
+  color: #cccccc;
+}
+
+.newH {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.dark-mode .newH {
+  color: #e4e4e4;
+}
+
+@media (max-width: 1400px) {
+  .releaseDetail {
+    width: 73%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .releaseDetail {
+    width: 68.5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .releaseStart {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .mediaCateDate {
+    display: flex;
+    flex-direction: column;
+  }
+}
